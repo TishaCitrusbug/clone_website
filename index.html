@@ -181,44 +181,50 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
-            margin: 0;
-            padding: 0;
+            background-color: #f6faff;
+            /* margin: 70px; */
+            /* padding: 200px; */
         }
 
         .navbar-custom {
             background-color: #f6faff;
-            padding: 50px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            /* padding: 50px 100px;  */
+            /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
             /* position: fixed; */
         }
 
         .navbar-custom .navbar-brand img {
-            height: 40px;
-            width: 178px;
+            height: 50px;
+            width: 282px;
+            padding-left: 100px;
+
         }
 
         .navbar-custom .nav-link {
             color: #000;
             font-size: 16px;
-            margin: 0 10px;
+            margin: 0 15px;
+            padding: 10px 20px;
         }
 
         .navbar-custom .nav-link:hover {
             text-decoration: underline;
+            padding: 8px 15px;
+
         }
 
         .navbar-custom .cta {
-            background-color: #0e2240;
+            background-color: #0E2240;
             color: #fff;
-            padding: 10px 20px;
-            border-radius: 5px;
+            /* padding-right: 60px 70px; */
+            border-radius: 50px;
             text-decoration: none;
-            font-size: 16px;
+            font-weight: 500;
+            font-size: 14px;
         }
 
         .navbar-custom .cta:hover {
-            background-color: #162063;
+            background-color: #163a6381;
         }
 
         .hero-section {
@@ -226,19 +232,20 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            padding: 100px 50px;
+            padding: 20px 20px;
             background-color: #f6faff;
-            margin-top: 200px;
+            margin-top: 20px;
         }
 
         .hero-text {
             max-width: 500px;
+            gap: 30px 30px;
         }
 
         .hero-text h1 {
             font-size: 36px;
             font-weight: bold;
-            color: #000;
+            color: #0e2240;
         }
 
         .hero-text p {
@@ -248,12 +255,13 @@
         }
 
         .hero-text .cta {
-            background-color: #0e2240;
+            background-color: #0E2240;
             color: #fff;
             padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-size: 16px;
+            border-radius: 25px;
+            /* text-decoration: none; */
+            font-size: 14px;
+
         }
 
         .hero-text .cta:hover {
@@ -261,9 +269,9 @@
         }
 
         .hero-image img {
-            max-width: 100%;
+            max-width: 120%;
             height: auto;
-            padding: 10px;
+            /* padding: 10px; */
         }
 
         .how-it-works {
@@ -274,6 +282,29 @@
             font-size: 2rem;
             color: #232f6b;
         }
+
+        footer {
+            background-color: #0E2240;
+            /* Dark background color */
+            color: #ffffff;
+            font-weight: 400;
+            padding: 30px ;
+            position: relative;
+            bottom: 0;
+            font-size: 12px;
+            font-family:  "Poppins", Sans-serif;           
+            width: 1920px;
+        }
+
+        footer p {
+            margin-bottom: 0;
+            /* Remove default margin */
+        }
+
+        .footer-section {
+            padding-top: 30px;
+            /* Top padding for the sections */
+        }
     </style>
 </head>
 
@@ -282,9 +313,12 @@
     <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img width="282" height="72" src="C:\Users\Tisha Citrusbug\Desktop\Spike_clone_website\clone_website\assests\images\logo.svg" alt="Spike">
+                <img width="282" height="72"
+                    src="C:\Users\Tisha Citrusbug\Desktop\Spike_clone_website\clone_website\assests\images\logo.svg"
+                    alt="Spike">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -312,16 +346,18 @@
             </div>
         </div>
     </nav>
-
+<!--
     <div class="container-fluid hero-section">
         <div class="row">
             <div class="col-md-6 hero-text">
                 <h1>API for health data from wearables and IoT</h1>
-                <p>Connect your app to users’ real-time data from 300+ devices via a single API. Make that data usable with our white-label AI/ML services.</p>
+                <p>Connect your app to users’ real-time data from 300+ devices via a single API. Make that data usable
+                    with our white-label AI/ML services.</p>
                 <a href="#" class="cta">Book a demo</a>
             </div>
             <div class="col-md-6 hero-image">
-                <img src="C:\Users\Tisha Citrusbug\Desktop\Spike_clone_website\clone_website\assests\images\data_flow.jpg" alt="Data Flow Diagram">
+                <img src="C:\Users\Tisha Citrusbug\Desktop\Spike_clone_website\clone_website\assests\images\data_flow.jpg"
+                    alt="Data Flow Diagram">
             </div>
         </div>
     </div>
@@ -334,12 +370,14 @@
         <div class="container text-center">
             <div class="row">
                 <div class="col-md-6">
-                    <img src="C:\Users\Tisha Citrusbug\Desktop\Spike_clone_website\clone_website\assests\images\How-it-works.webp" alt="Code Snippet" class="img-fluid">
+                    <img src="C:\Users\Tisha Citrusbug\Desktop\Spike_clone_website\clone_website\assests\images\How-it-works.webp"
+                        alt="Code Snippet" class="img-fluid">
                 </div>
                 <div class="col-md-6">
                     <div class="feature-box">
                         <h3>Integrate our API and SDK</h3>
-                        <p>Start testing right away with our easy-to-implement and well-documented API and shorten your development cycles.</p>
+                        <p>Start testing right away with our easy-to-implement and well-documented API and shorten your
+                            development cycles.</p>
                     </div>
                     <div class="feature-box">
                         <h3>Allow your users to connect</h3>
@@ -347,12 +385,28 @@
                     </div>
                     <div class="feature-box">
                         <h3>Start leveraging wearables data</h3>
-                        <p>Enhance the functionality and UX of your application. Deliver personalised insights and increase user retention.</p>
+                        <p>Enhance the functionality and UX of your application. Deliver personalised insights and
+                            increase user retention.</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
+    <footer class="bg-dark text-white py-3 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-left footer-section">
+                    <p>Spike API | 2024</p>
+                </div>
+                <div class="col-md-6 text-center text-md-right footer-section">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item">Privacy Policy</li>
+                        <li class="list-inline-item">Terms of Service</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
