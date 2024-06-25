@@ -18,6 +18,7 @@
 
         .navbar-custom {
             background-color: #f6faff;
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
             /* position: fixed; */
             /* padding-top: 18px;  */
             /* padding-bottom: 0px;
@@ -27,10 +28,7 @@
             display: flex;
             /* flex-direction: row; */
             padding: 18px 300px;
-            /* gap: 20px; */
-            /* width: 100%; */
-            /* margin-top: 20px; */
-            /* margin: 0 auto; */
+
         }
 
         .navbar-custom .navbar-brand img {
@@ -97,7 +95,10 @@
         /* Style the hero text container */
         .mid-content .hero-section .hero-text {
             padding: 20px;
-            display: block;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
 
         }
 
@@ -117,7 +118,7 @@
             font-family: "Poppins", Sans-serif;
             color: #666;
             margin: 25px 0px;
-            padding-right: 21px;
+            padding-right: 23px;
         }
 
         /* Style the call-to-action button */
@@ -166,6 +167,7 @@
             color: #0e2240;
             font-family: "Poppins", Sans-serif;
             font-size: 38px;
+            gap: 20px 20px;
         }
 
         p {
@@ -303,12 +305,12 @@
         </div>
     </div>
     </div>
+
     <div class="load">
         <div class="hiw my-5">
             <!-- Heading Section -->
             <div class="text-center">
                 <h2>How it works</h2>
-                <br>
                 <p>One API with access to all the major Wearable and IoT providers</p>
             </div>
 
