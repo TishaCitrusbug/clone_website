@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,42 +12,51 @@
             background-color: #f6faff;
             /* margin: 70px; */
             /* padding: 200px; */
+            margin: 0% auto;
         }
 
         .navbar-custom {
             background-color: #f6faff;
-            /* padding: 50px 100px;  */
-            /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
             /* position: fixed; */
-            padding-top: 18px;
-            padding-bottom: 0px;
+            /* padding-top: 18px;  */
+            /* padding-bottom: 0px;
             padding-left: 190px;
-            padding-right: 260px;
+            padding-right: 260px;*/
+            justify-content: space-between !important;
+            display: flex;
+            /* flex-direction: row; */
+            padding: 18px 300px;
+            /* gap: 20px; */
+            /* width: 100%; */
+            /* margin-top: 20px; */
+            /* margin: 0 auto; */
         }
 
         .navbar-custom .navbar-brand img {
-            height: 50px;
-            width: 282px;
-            padding-left: 100px;
+            height: 45px;
+            width: 178px;
+            /* padding-left: 100px; */
 
         }
 
         .navbar-custom .nav-link {
             color: #000;
             font-size: 16px;
-            margin: 0 15px;
+            margin: 5px 7px;
             padding: 10px 20px;
+            align-items: center;
         }
 
         .navbar-custom .nav-link:hover {
             /* text-decoration: underline; */
-            padding: 8px 15px;
+            /* padding: 8px 15px; */
+            color: #818af7;
 
         }
 
         .navbar-custom .cta {
             background-color: #0E2240;
-            color: #fff;
+            color: #fff !important;
             /* padding-right: 60px 70px; */
             border-radius: 50px;
             text-decoration: none;
@@ -60,62 +68,72 @@
             background-color: hsl(197, 95%, 43%);
         }
 
-        .hero-section {
+        .mid-content{
             display: flex;
             flex-direction: row;
-            gap: 30px 30px;
+            /* gap: 30px 30px; */
             padding-top: 150px;
             padding-bottom: 120px;
             padding-left: 300px;
             padding-right: 20px;
-
-        }
-        .hero-section .inner{
-            width: 30%;
-        }
-        .hero-section .inner .co-inner{
-            padding-block-start: 0%;
-            padding-block-end: 0%;
+            margin: 0 auto;
+        
         }
 
-
-        .hero-section .inner .co-inner .hero-text {
-            padding-top: 48px;
-            padding-bottom: 0px;
-            padding-left: 0px;
-            padding-right: 0px;
+        /* Add some basic styling to the hero section */
+        .mid-content .hero-section {
+            display: flex;
+            /* max-width: 50%; */
+            /* margin: 0 auto; */
+            justify-content: space-between;
+        
         }
 
-        .hero-section .inner .co-inner .hero-text h1 {
-            font-size: 32px;
-            font-weight: bold;
+        /* Style the hero text container */
+        .mid-content .hero-section .hero-text {
+            padding: 20px;
+        }
+
+        /* Style the hero image container */
+        .mid-content .hero-section .hero-text h1{
+            font-size: 38px;
             color: #0e2240;
+            font-family: "Poppins", Sans-serif;
+            font-weight: 600;
+            line-height: 1.4em;
         }
 
-        .hero-section .inner .co-inner .hero-text p {
-            font-size: 18px;
+        /* Make the image responsive */
+        .mid-content .hero-section .hero-text p {
+            font-size: 16px;
+            font-family: "Poppins", Sans-serif;
             color: #666;
             margin: 20px 0;
         }
 
-        .hero-section .inner .co-inner .hero-text .cta {
+        /* Style the call-to-action button */
+        .mid-content .hero-section .hero-text .cta {
             background-color: #0E2240;
-            color: #fff;
+            color: #fff !important;
             padding: 10px 20px;
-            border-radius: 25px;
-            text-decoration: none; 
+            border-radius: 50px;
+            /* text-decoration: none; */
             font-size: 14px;
-
         }
 
-        .hero-section .inner .co-inner .hero-text .cta:hover {
-            background-color: hsl(197, 95%, 43%);
+        .cta:hover {
+            background-color: #23527c;
         }
-        .hero-image img {
-            max-width: 120%;
+
+        .mid-content .hero-section .hero-img img{
+            max-width: 50%;
             height: auto;
-            /* padding: 10px; */
         }
+        .mid-content .hero-section .hero-img img:hover{
+            color: #79a4f9;
+        }
+        
+
 
         .how-it-works {
             padding: 3rem 0;
@@ -126,31 +144,33 @@
             color: #232f6b;
         }
 
-        footer {
+        .footer {
             background-color: #0E2240;
-            /* Dark background color */
-            color: #ffffff;
+            color: #fff;
             font-weight: 400;
-            padding: 30px ;
             position: relative;
-            bottom: 0;
             font-size: 12px;
-            font-family:  "Poppins", Sans-serif;           
-            width: 1920px;
+            font-family: "Poppins", Sans-serif;
+            padding: 20px;
+            margin-top: 20px;
+
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            /* text-decoration: underline; */
+            color: #eeeeee;
+
+        }
+
+        .footer-content {
             display: flex;
             justify-content: space-between;
-
-        }
-
-        footer p {
-            margin-bottom: 10px;
-            /* padding-right: 325px; */
-            
-        }
-
-        .footer-section {
-            padding-top: 20px;
-            
+            align-items: center;
         }
     </style>
 </head>
@@ -194,86 +214,49 @@
         </div>
     </nav>
 
-    <div class="main_content">
-        <div class="container-fluid hero-section">
-            <div class="inner">
-                <div class="co-inner">
-                    <div class="heading">
-                        <div class="col-md-10 hero-text">
-                            <h1>API for health data from wearables and IoT</h1>
-                            <p>Connect your app to users’ real-time data from 300+ devices via a single API.
-                                 Make that data usable with our white-label AI/ML services.</p>
-                            <a href="#" class="cta">Book a demo</a>
-                        </div>
+    <div class="container"> <!--main container of home page-->
+        <div class="mid-content"> <!--mid container of the body part-->
+            <div class="hero-section"> <!--first part of the mid content-->
+                <div class="col-md-6 hero-text">
+                    <div class="h1">
+                        <h1>API for health data from wearables and IoT</h1>
                     </div>
+                    <div class="p">
+                        <p>Connect your app to users’ real-time data from 300+ devices via a single API. Make that data
+                            usable
+                            with our white-label AI/ML services.</p>
+                    </div>
+                    <div class="cta btn btn-primary">Book a demo</div>
                 </div>
             </div>
-        <!--<div class ="container hero-image">
-            <img src = "C:\Users\Tisha Citrusbug\Desktop\Spike_clone_website\clone_website\assests\images\data_flow.jpg" alt="DAta flow diagram" height="">
-        </div>-->
+        </div>
+        <div class="col-md-6 hero-image"> <!-- Second part of mid content-->
+            <img src="C:\Users\Tisha Citrusbug\Desktop\Spike_clone_website\clone_website\assests\images\data_flow.jpg"
+            alt="Data Flow Diagram" class="img-fluid">
         </div>
     </div>
-<!--
-    <div class="container-fluid hero-section">
-        <div class="row">
-            <div class="col-md-6 hero-text">
-                <h1>API for health data from wearables and IoT</h1>
-                <p>Connect your app to users’ real-time data from 300+ devices via a single API. Make that data usable
-                    with our white-label AI/ML services.</p>
-                <a href="#" class="cta">Book a demo</a>
-            </div>
-            <div class="col-md-6 hero-image">
-                <img src="C:\Users\Tisha Citrusbug\Desktop\Spike_clone_website\clone_website\assests\images\data_flow.jpg"
-                    alt="Data Flow Diagram">
-            </div>
-        </div>
     </div>
 
-    <section class="how-it-works">
-        <div class="container text-center">
-            <h2>How it works</h2>
-            <p>One API with access to all the major Wearable and IoT providers.</p>
-        </div>
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="C:\Users\Tisha Citrusbug\Desktop\Spike_clone_website\clone_website\assests\images\How-it-works.webp"
-                        alt="Code Snippet" class="img-fluid">
-                </div>
-                <div class="col-md-6">
-                    <div class="feature-box">
-                        <h3>Integrate our API and SDK</h3>
-                        <p>Start testing right away with our easy-to-implement and well-documented API and shorten your
-                            development cycles.</p>
-                    </div>
-                    <div class="feature-box">
-                        <h3>Allow your users to connect</h3>
-                        <p>No matter what’s their wearable of choice</p>
-                    </div>
-                    <div class="feature-box">
-                        <h3>Start leveraging wearables data</h3>
-                        <p>Enhance the functionality and UX of your application. Deliver personalised insights and
-                            increase user retention.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>-->
-    <footer class=" text-white py-3 mt-5">
+
+
+
+
+    <footer class="footer">
         <div class="container">
-            <div class="row">
-                <div class="text-center text-md-left footer-section">
+            <div class="footer-content">
+                <div class="footer-left">
                     <p>Spike API | 2024</p>
                 </div>
-                <div class="text-center text-md-right footer-section">
+                <div class="footer-right">
                     <ul class="list-inline mb-0">
-                        <li class="list-inline-item">Privacy Policy</li>
-                        <li class="list-inline-item">Terms of Service</li>
+                        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                        <li class="list-inline-item"><a href="#">Terms of Service</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </footer>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
