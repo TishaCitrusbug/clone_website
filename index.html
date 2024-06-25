@@ -15,6 +15,7 @@
             margin: 0% auto;
         }
 
+
         .navbar-custom {
             background-color: #f6faff;
             /* position: fixed; */
@@ -68,16 +69,19 @@
             background-color: hsl(197, 95%, 43%);
         }
 
-        .mid-content{
+        .wbpage-content {
+            padding: 200px 320px;
+            margin: 0 auto;
+        }
+
+        .mid-content {
             display: flex;
             flex-direction: row;
             /* gap: 30px 30px; */
-            padding-top: 150px;
-            padding-bottom: 120px;
-            padding-left: 300px;
-            padding-right: 20px;
-            margin: 0 auto;
-        
+
+            /* padding: 200px 320px; */
+            /* margin: 0 auto; */
+
         }
 
         /* Add some basic styling to the hero section */
@@ -86,29 +90,33 @@
             /* max-width: 50%; */
             /* margin: 0 auto; */
             justify-content: space-between;
-        
+
         }
 
         /* Style the hero text container */
         .mid-content .hero-section .hero-text {
             padding: 20px;
+            display: block;
+
         }
 
         /* Style the hero image container */
-        .mid-content .hero-section .hero-text h1{
+        .mid-content .hero-section .hero-text h1 {
             font-size: 38px;
             color: #0e2240;
             font-family: "Poppins", Sans-serif;
             font-weight: 600;
-            line-height: 1.4em;
+            /* display: flex; */
+            /* line-height: 1.4em; */
         }
 
         /* Make the image responsive */
         .mid-content .hero-section .hero-text p {
-            font-size: 16px;
+            font-size: 19px;
             font-family: "Poppins", Sans-serif;
             color: #666;
-            margin: 20px 0;
+            margin: 25px 0px;
+            padding-right: 21px;
         }
 
         /* Style the call-to-action button */
@@ -125,23 +133,46 @@
             background-color: #23527c;
         }
 
-        .mid-content .hero-section .hero-img img{
-            max-width: 50%;
+        .mid-content .hero-section .hero-img img {
+            max-width: 40%;
             height: auto;
         }
-        .mid-content .hero-section .hero-img img:hover{
+
+        .mid-content .hero-section .hero-img img:hover {
             color: #79a4f9;
         }
-        
 
-
-        .how-it-works {
-            padding: 3rem 0;
+        h2 {
+            font-weight: bold;
+            color: #1f2937;
         }
 
-        .how-it-works h2 {
-            font-size: 2rem;
-            color: #232f6b;
+        p {
+            color: #6b7280;
+        }
+
+        .code-snippet {
+            background-color: #1e1e1e;
+            color: #dcdcdc;
+            border-radius: 5px;
+            padding: 20px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .info-card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .info-card h5 {
+            font-weight: bold;
+            color: #1f2937;
+        }
+
+        .info-card p {
+            color: #6b7280;
         }
 
         .footer {
@@ -177,67 +208,104 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img width="282" height="72"
-                    src="C:\Users\Tisha Citrusbug\Desktop\Spike_clone_website\clone_website\assests\images\logo.svg"
-                    alt="Spike">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">API Docs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Supported Devices</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Managed ETL</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">AI / ML</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Careers</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
-                    </li>
-                </ul>
-                <a href="#" class="cta nav-item nav-link">Book a demo</a>
+    <div class="container-div">
+        <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img width="282" height="72"
+                        src="C:\Users\Tisha Citrusbug\Desktop\Spike_clone_website\clone_website\assests\images\logo.svg"
+                        alt="Spike">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">API Docs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Supported Devices</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Managed ETL</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">AI / ML</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Careers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                    </ul>
+                    <a href="#" class="cta nav-item nav-link">Book a demo</a>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
 
-    <div class="container"> <!--main container of home page-->
+    <div class="wbpage-content"> <!--main container of home page-->
         <div class="mid-content"> <!--mid container of the body part-->
             <div class="hero-section"> <!--first part of the mid content-->
-                <div class="col-md-6 hero-text">
+                <div class="hero-text">
                     <div class="h1">
                         <h1>API for health data from wearables and IoT</h1>
                     </div>
                     <div class="p">
-                        <p>Connect your app to users’ real-time data from 300+ devices via a single API. Make that data
-                            usable
-                            with our white-label AI/ML services.</p>
+                        <p>Connect your app to users’ real-time data from 300+ devices via a single API.
+                            Make that data
+                            usable with our white-label AI/ML services.</p>
                     </div>
                     <div class="cta btn btn-primary">Book a demo</div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-6 hero-image"> <!-- Second part of mid content-->
-            <img src="C:\Users\Tisha Citrusbug\Desktop\Spike_clone_website\clone_website\assests\images\data_flow.jpg"
-            alt="Data Flow Diagram" class="img-fluid">
+            <div class="col-md-6 hero-image"> <!-- Second part of mid content-->
+                <img src="C:\Users\Tisha Citrusbug\Desktop\Spike_clone_website\clone_website\assests\images\data_flow.jpg"
+                    alt="Data Flow Diagram" class="img-fluid">
+            </div>
         </div>
     </div>
     </div>
 
+    <div class="container my-5">
+        <!-- Heading Section -->
+        <div class="text-center mb-5">
+            <h2>How it works</h2>
+            <br>
+            <p>One API with access to all the major Wearable and IoT providers</p>
+        </div>
 
+        <!-- Content Section -->
+        <div class="row">
+            <!-- Code Snippet -->
+            <div class="col-lg-6 mb-4">
+                <div class="code-snippet p-3">
+                    <img src="C:\Users\Tisha Citrusbug\Desktop\Spike_clone_website\clone_website\assests\images\How-it-works.webp" alt="Code Snippet" class="img-fluid">
+                </div>
+            </div>
+
+            <!-- Info Boxes -->
+            <div class="col-lg-6">
+                <div class="info-card p-3 mb-4 shadow-sm">
+                    <h5>Integrate our API and SDK</h5>
+                    <p>Start testing right away with our easy-to-implement and well-documented API and shorten your
+                        development cycles.</p>
+                </div>
+                <div class="info-card p-3 mb-4 shadow-sm">
+                    <h5>Allow your users to connect</h5>
+                    <p>No matter what’s their wearable of choice.</p>
+                </div>
+                <div class="info-card p-3 shadow-sm">
+                    <h5>Start leveraging wearables data</h5>
+                    <p>Enhance the functionality and UX of your application. Deliver personalized insights and increase
+                        user retention.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
