@@ -213,31 +213,16 @@
             padding: 113px 8px;
             width: 80%;
         }
-
-        .info-card {
-            background-color: #f6faff;
-            border-radius: 25px;
-            border: 1px solid #f6faff;
-            padding: 20px;
-            margin-bottom: 20px;
-            box-sizing: border-box;
-            font-family: "Poppins", Sans-serif;
-            /* width: 100%; */
-            /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+        .icon-part{
+            display: flex;
+            width: 38%;
+            flex-direction: column;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 0px;
+            padding-right: 0px;
         }
 
-        .info-card h5 {
-            font-weight: bold;
-            color: #0e2240;
-
-
-        }
-
-        .info-card p {
-            color: #6b7280;
-            /* width: 30%; */
-
-        }
 
 
         .footer {
@@ -356,9 +341,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 icon-part">
                         <div class="text-content">
-                            <div class="nfo-card p-3 mb-4 shadow-sm">
+                            <div class="p-3 mb-4 shadow-sm">
                                 <div class="icon-box">
                                     <div class="icon-wrap">
                                         <div class="icon">
@@ -380,25 +365,39 @@
                                     </div>
                                 </div>
                                 <div class="icon-box-2">
-                                    <div class="content2">
+                                    <div class="content">
                                         <p>Start testing right away with our easy-to-implement and well-documented API
                                             and shorten your development cycles</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="info-card p-3 mb-4 shadow-sm">
+                        <div class="p-3 mb-4 shadow-sm">
                             <div class="icon-box-3">
                                 <div class="icon-wrap2">
                                     <div class="icon2">
                                         <div class="icon2-1">
                                             <span class="icon-animation2">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                                    <path d="M18 8C19.6569 8 21 6.65685 21 5C21 3.34315 19.6569 2 18 2C16.3431 2 15 3.34315 15 5C15 6.65685 16.3431 8 18 8Z" stroke="#8388D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    <path d="M6 15C7.65685 15 9 13.6569 9 12C9 10.3431 7.65685 9 6 9C4.34315 9 3 10.3431 3 12C3 13.6569 4.34315 15 6 15Z" stroke="#8388D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    <path d="M18 22C19.6569 22 21 20.6569 21 19C21 17.3431 19.6569 16 18 16C16.3431 16 15 17.3431 15 19C15 20.6569 16.3431 22 18 22Z" stroke="#8388D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    <path d="M8.58997 13.51L15.42 17.49" stroke="#8388D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    <path d="M15.41 6.51001L8.58997 10.49" stroke="#8388D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none">
+                                                    <path
+                                                        d="M18 8C19.6569 8 21 6.65685 21 5C21 3.34315 19.6569 2 18 2C16.3431 2 15 3.34315 15 5C15 6.65685 16.3431 8 18 8Z"
+                                                        stroke="#8388D4" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round"></path>
+                                                    <path
+                                                        d="M6 15C7.65685 15 9 13.6569 9 12C9 10.3431 7.65685 9 6 9C4.34315 9 3 10.3431 3 12C3 13.6569 4.34315 15 6 15Z"
+                                                        stroke="#8388D4" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round"></path>
+                                                    <path
+                                                        d="M18 22C19.6569 22 21 20.6569 21 19C21 17.3431 19.6569 16 18 16C16.3431 16 15 17.3431 15 19C15 20.6569 16.3431 22 18 22Z"
+                                                        stroke="#8388D4" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round"></path>
+                                                    <path d="M8.58997 13.51L15.42 17.49" stroke="#8388D4"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    </path>
+                                                    <path d="M15.41 6.51001L8.58997 10.49" stroke="#8388D4"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    </path>
                                                 </svg>
                                             </span>
                                         </div>
@@ -417,34 +416,52 @@
                                 <div class="icon-box-5">
                                     <div class="inner-icons">
                                         <div class="inner-icons1">
-                                                <img width="30" height="30"  src="https://spikeapi.com/wp-content/uploads/elementor/thumbs/Artboard-2-pz1qk8b5avxxox5g3ndkhfuj8b83xpul455w4f0qek.png"  alt="inner-icons1" >
+                                            <img width="30" height="30"
+                                                src="https://spikeapi.com/wp-content/uploads/elementor/thumbs/Artboard-2-pz1qk8b5avxxox5g3ndkhfuj8b83xpul455w4f0qek.png"
+                                                alt="inner-icons1">
                                         </div>
                                         <div class="inner-icons2">
-                                                <img width="30" height="30"  src="https://spikeapi.com/wp-content/uploads/elementor/thumbs/Artboard-4-pz1qkb4nve1snr1cn6lg6x4x0gu7kt5s4j4ck8wjvw.png" alt="inner-icons2">
+                                            <img width="30" height="30"
+                                                src="https://spikeapi.com/wp-content/uploads/elementor/thumbs/Artboard-4-pz1qkb4nve1snr1cn6lg6x4x0gu7kt5s4j4ck8wjvw.png"
+                                                alt="inner-icons2">
                                         </div>
                                         <div class="inner-icons3">
-                                            <img width="30" height="30" src="https://spikeapi.com/wp-content/uploads/elementor/thumbs/Artboard-5-pz1qkc2i2832zczzhp02rewdlupksi9ignru1iv5po.png" alt="inner-icons3">
+                                            <img width="30" height="30"
+                                                src="https://spikeapi.com/wp-content/uploads/elementor/thumbs/Artboard-5-pz1qkc2i2832zczzhp02rewdlupksi9ignru1iv5po.png"
+                                                alt="inner-icons3">
                                         </div>
                                         <div class="inner-icons4">
-                                            <img width="30" height="30" src="https://spikeapi.com/wp-content/uploads/elementor/thumbs/Artboard-8-pz1qkew0mq6xy6vw187ygw6re0boflkph1qahcqz70.png" alt="inner-icons4">
+                                            <img width="30" height="30"
+                                                src="https://spikeapi.com/wp-content/uploads/elementor/thumbs/Artboard-8-pz1qkew0mq6xy6vw187ygw6re0boflkph1qahcqz70.png"
+                                                alt="inner-icons4">
                                         </div>
                                         <div class="inner-icons5">
-                                            <img width="30" height="30" src="https://spikeapi.com/wp-content/uploads/elementor/thumbs/Artboard-6-pz1qkd0c924dayymc7epbwnu78ky07d8ssfbistrjg.png" alt="inner-icons5">
+                                            <img width="30" height="30"
+                                                src="https://spikeapi.com/wp-content/uploads/elementor/thumbs/Artboard-6-pz1qkd0c924dayymc7epbwnu78ky07d8ssfbistrjg.png"
+                                                alt="inner-icons5">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="info-card p-3 shadow-sm">
+                        <div class="p-3 shadow-sm">
                             <div class="icon-box-6">
                                 <div class="icon-wrap3">
                                     <div class="icon3">
                                         <div class="icon3-1">
                                             <span class="icon-animation3">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                                    <path d="M12 8C16.9706 8 21 6.65685 21 5C21 3.34315 16.9706 2 12 2C7.02944 2 3 3.34315 3 5C3 6.65685 7.02944 8 12 8Z" stroke="#8388D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    <path d="M21 12C21 13.66 17 15 12 15C7 15 3 13.66 3 12" stroke="#8388D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                    <path d="M3 5V19C3 20.66 7 22 12 22C17 22 21 20.66 21 19V5" stroke="#8388D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none">
+                                                    <path
+                                                        d="M12 8C16.9706 8 21 6.65685 21 5C21 3.34315 16.9706 2 12 2C7.02944 2 3 3.34315 3 5C3 6.65685 7.02944 8 12 8Z"
+                                                        stroke="#8388D4" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round"></path>
+                                                    <path d="M21 12C21 13.66 17 15 12 15C7 15 3 13.66 3 12"
+                                                        stroke="#8388D4" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round"></path>
+                                                    <path d="M3 5V19C3 20.66 7 22 12 22C17 22 21 20.66 21 19V5"
+                                                        stroke="#8388D4" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round"></path>
                                                 </svg>
                                             </span>
                                         </div>
@@ -455,9 +472,10 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class ="icon-box-7">
+                                <div class="icon-box-7">
                                     <div class="content4">
-                                        <p>Enhance the functionality and UX of your application. Deliver personalised insights and increase user retention</p>
+                                        <p>Enhance the functionality and UX of your application. Deliver personalised
+                                            insights and increase user retention</p>
                                     </div>
                                 </div>
                             </div>
