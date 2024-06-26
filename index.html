@@ -18,7 +18,7 @@
 
         .navbar-custom {
             background-color: #f6faff;
-            box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
             /* position: fixed; */
             /* padding-top: 18px;  */
             /* padding-bottom: 0px;
@@ -67,9 +67,20 @@
             background-color: hsl(197, 95%, 43%);
         }
 
-        .wbpage-content {
-            padding: 150px 270px;
-            margin: 0 auto;
+        .main-page {
+            padding-left: 20px;
+            padding-right: 20px;
+            height: 1903;
+            width: 3840.08;
+        }
+
+        .main-page .container {
+            height: 1280;
+            width: 368.750;
+            padding-top: 150px;
+            padding-bottom: 120px;
+            margin-left: 230px;
+            margin-right: 291.500px;
         }
 
         .mid-content {
@@ -138,32 +149,34 @@
 
         .mid-content .hero-section .hero-img img {
             max-width: 40%;
-            height: auto;
         }
 
         .mid-content .hero-section .hero-img img:hover {
             color: #79a4f9;
         }
-        .load{
-            background-image : url(https://spikeapi.com/wp-content/uploads/2022/12/shape.svg);
+
+        .load {
+            background-image: url(https://spikeapi.com/wp-content/uploads/2022/12/shape.svg);
             background-repeat: no-repeat;
             background-position: canter left;
             background-size: auto;
             padding-top: 30px;
             padding-left: 300px;
+            max-width: 100%;
         }
-        .load .hiw{
+
+        .load .hiw {
             /* display: flex; */
-           /* padding-top: 30px;
+            /* padding-top: 30px;
             padding-bottom: 60px;
             padding-left: 60px;
             padding-right: 20px;
             box-sizing: border-box;*/
-            max-width: 1300px;
+            max-width: 1100px;
             display: flex;
             flex-direction: column;
             gap: 30px;
-            
+
         }
 
         .load .hiw h2 {
@@ -173,24 +186,36 @@
             font-size: 38px;
             gap: 20px 20px;
         }
-        .load .hiw p{
+
+        .load .hiw p {
             color: #666;
             font-family: "Poppins", Sans-serif;
             font-size: 18px;
 
         }
 
-
-        .code-snippet {
-            /* background-color: #1e1e1e; */
-            /* color: #dcdcdc; */
-            /* border-radius: 25px; */
-            padding: 20px;
-            /* white-space: pre-wrap; */
-            /* word-wrap: break-word; */
-            border-radius: 14px 14px 14px 14px;
+        .load .hiw .mid-inner-content {
+            display: flex;
+            flex-direction: row;
+            gap: 0px 0px;
             width: 100%;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+        .load .hiw .mid-inner-content .code-snippet {
+            flex-direction: column;
+            justify-content: center;
+            padding-top: 15px;
+            padding-bottom: 30px;
+            padding-left: 0px;
+            padding-right: 80px;
+            border-radius: 14px 14px 14px 14px;
+            width: 70%;
             height: auto;
+
         }
 
         .info-card {
@@ -207,14 +232,15 @@
         .info-card h5 {
             font-weight: bold;
             color: #0e2240;
-            
+
 
         }
 
         .info-card p {
             color: #6b7280;
-            
+
         }
+
 
         .footer {
             background-color: #0E2240;
@@ -290,73 +316,70 @@
         </nav>
     </div>
 
-    <div class="wbpage-content"> <!--main container of home page-->
-        <div class="mid-content"> <!--mid container of the body part-->
-            <div class="hero-section"> <!--first part of the mid content-->
-                <div class="hero-text">
-                    <div class="h1">
-                        <h1>API for health data from wearables and IoT</h1>
+    <div class="main-page">
+        <div class="container">
+            <div class="mid-content">
+                <div class="hero-section">
+                    <div class="hero-text">
+                        <div class="h1">
+                            <h1>API for health data from wearables and IoT</h1>
+                        </div>
+                        <div class="p">
+                            <p>Connect your app to users’ real-time data from 300+ devices via a single API.
+                                Make that data
+                                usable with our white-label AI/ML services.</p>
+                        </div>
+                        <div class="cta btn btn-primary">Book a demo</div>
                     </div>
-                    <div class="p">
-                        <p>Connect your app to users’ real-time data from 300+ devices via a single API.
-                            Make that data
-                            usable with our white-label AI/ML services.</p>
-                    </div>
-                    <div class="cta btn btn-primary">Book a demo</div>
                 </div>
-            </div>
-            <div class="col-md-6 hero-image"> <!-- Second part of mid content-->
-                <img src="C:\Users\Tisha Citrusbug\Desktop\Spike_clone_website\clone_website\assests\images\data_flow.jpg"
-                    alt="Data Flow Diagram" class="img-fluid">
-            </div>
-        </div>
-    </div>
-    </div>
-
-    <div class="load">
-        <div class="hiw my-5">
-            <!-- Heading Section -->
-            <div class="text-center">
-                <h2>How it works</h2>
-            </div>
-            <div class="text-center">
-                <p>One API with access to all the major Wearable and IoT providers</p>
-            </div>
-
-            <!-- Content Section -->
-        <div class="row">
-                <!-- Code Snippet -->
-            <div class="col-lg-6 mb-4">
-                <div class="code-snippet p-3">
-                    <img src="C:\Users\Tisha Citrusbug\Desktop\Spike_clone_website\clone_website\assests\images\How-it-works.webp"
-                        alt="Code Snippet" class="img-fluid">
-                </div>
-            </div>
-
-                <!-- Info Boxes -->
-                <div class="col-lg-6">
-                    <div class="info-card p-3 mb-4 shadow-sm">
-                        <h5>Integrate our API and SDK</h5>
-                        <p>Start testing right away with our easy-to-implement and well-documented API and shorten your
-                            development cycles.</p>
-                    </div>
-                    <div class="info-card p-3 mb-4 shadow-sm">
-                        <h5>Allow your users to connect</h5>
-                        <p>No matter what’s their wearable of choice.</p>
-                    </div>
-                    <div class="info-card p-3 shadow-sm">
-                        <h5>Start leveraging wearables data</h5>
-                        <p>Enhance the functionality and UX of your application. Deliver personalized insights and
-                            increase
-                            user retention.</p>
-                    </div>
+                <div class="col-md-6 hero-image">
+                    <img src="C:\Users\Tisha Citrusbug\Desktop\Spike_clone_website\clone_website\assests\images\data_flow.jpg"
+                        alt="Data Flow Diagram" class="img-fluid">
                 </div>
             </div>
         </div>
+
+
+        <div class="load">
+            <div class="hiw my-5">
+                <!-- Heading Section -->
+                <div class="text-center">
+                    <h2>How it works</h2>
+                </div>
+                <div class="text-center">
+                    <p>One API with access to all the major Wearable and IoT providers</p>
+                </div>
+                <div class="mid-inner-content">
+                    <div class="col-lg-6 mb-4 code-snippet">
+                        <div class="img-inner">
+                            <div class="img-near">
+                                <img src="C:\Users\Tisha Citrusbug\Desktop\Spike_clone_website\clone_website\assests\images\How-it-works.webp"
+                                    alt="img load" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="info-card p-3 mb-4 shadow-sm">
+                            <h5>Integrate our API and SDK</h5>
+                            <p>Start testing right away with our easy-to-implement and well-documented API and shorten
+                                your
+                                development cycles.</p>
+                        </div>
+                        <div class="info-card p-3 mb-4 shadow-sm">
+                            <h5>Allow your users to connect</h5>
+                            <p>No matter what’s their wearable of choice.</p>
+                        </div>
+                        <div class="info-card p-3 shadow-sm">
+                            <h5>Start leveraging wearables data</h5>
+                            <p>Enhance the functionality and UX of your application. Deliver personalized insights and
+                                increase
+                                user retention.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-
-
 
     <footer class="footer">
         <div class="container">
